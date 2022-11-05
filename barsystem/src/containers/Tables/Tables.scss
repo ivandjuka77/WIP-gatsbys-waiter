@@ -1,0 +1,12 @@
+.tables {
+	height: calc(100vh - 104px);
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+	.button-27 {
+		width: 450px;
+		height: 150px;
+	}
+}

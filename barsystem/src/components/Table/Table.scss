@@ -1,0 +1,11 @@
+.styled-table {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 1rem;
+	min-width: 800px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+
+	.first-row {
+		background-color: #ad974f;
+	}
+}

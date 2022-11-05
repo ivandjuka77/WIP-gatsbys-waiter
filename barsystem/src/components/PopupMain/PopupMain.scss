@@ -1,0 +1,45 @@
+.popup {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	backdrop-filter: blur(2px);
+	background-color: rgba(0, 0, 0, 0.3);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.popup-inner {
+		position: relative;
+		padding: 32px;
+		width: 100%;
+		height: 100%;
+		max-width: 1200px;
+		max-height: 560px;
+		background-color: rgb(255, 255, 255);
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+
+		.btn-close {
+			width: 70px;
+			height: 30px;
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			margin-right: 15px;
+			background-color: #ad974f;
+			font-family: inherit;
+			font-weight: 700;
+			border: 1px solid black;
+			cursor: pointer;
+		}
+
+		Table {
+			margin-top: 40px;
+		}
+	}
+}

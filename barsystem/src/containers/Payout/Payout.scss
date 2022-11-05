@@ -1,0 +1,34 @@
+.payout {
+	height: calc(100vh - 104px);
+	display: flex;
+	justify-content: center;
+
+	.payout-inner {
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin-top: 50px;
+
+		border: 3px solid #ad974f;
+		width: 600px;
+
+		h1 {
+			font-size: 2.5rem;
+			text-decoration-line: underline;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		h3 {
+			font-size: 1.2rem;
+		}
+
+		button {
+			font-size: 1.1rem;
+		}
+	}
+}

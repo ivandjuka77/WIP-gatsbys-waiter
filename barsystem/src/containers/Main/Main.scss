@@ -1,0 +1,55 @@
+.main {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.main > h1 {
+	font-size: 2rem;
+	margin: 60px 0;
+	animation: fadeInAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.button-27:disabled {
+	pointer-events: none;
+}
+
+.button-27:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+}
+
+.button-27:active {
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+#main-btn1 {
+	animation: fadeInAnimation ease 1.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+#main-btn2 {
+	animation: fadeInAnimation ease 1.6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+#main-btn3 {
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}

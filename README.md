@@ -34,3 +34,6 @@ which logs out the waiter and clears out the stats. NOTE: Not all functionality 
 - Learned about React state, useEffect, hooks, and general tricks.
 - Improved knowledge of Backend, localStorage, API Calls, MongoDB, etc.
 - Understood Axios and how it works
+
+
+## Thank you for checking out my project! Feel free to look at the rest of my Github :)

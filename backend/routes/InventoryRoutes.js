@@ -5,7 +5,7 @@ const {
 	updateDrinks,
 } = require('../controllers/InventoryController');
 
-// Routes
+//Routes
 router.get('/', getDrinks);
 router.put('/update/:id', updateDrinks);
 

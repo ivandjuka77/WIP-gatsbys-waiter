@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv').config();
 const colors = require('colors');
@@ -23,6 +24,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/inventory', require('./routes/inventoryRoutes'));
 
+// Serve frontend
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static(path.join(__dirname, '../barsystem/build')));
+
+	app.get('*', (req, res) =>
+		res.sendFile(
+			path.resolve(__dirname, '../', 'barsystem', 'build', 'index.html')
+		)
+	);
+}
 // Replaces default error handler
 app.use(errorHandler);
 

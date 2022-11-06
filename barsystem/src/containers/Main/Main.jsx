@@ -4,12 +4,14 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { toast } from 'react-toastify';
 
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { returnDrinks } from '../../features/drinks/drinksSlice';
 
 import './Main.scss';
 
 export default function Main() {
 	const navigate = useNavigate();
+	const dispatch = useDispatch();
 
 	const { user } = useSelector((state) => state.auth);
 
@@ -21,7 +23,8 @@ export default function Main() {
 				toastId: 'main',
 			});
 		}
-	}, [user, navigate]);
+		dispatch(returnDrinks());
+	}, [user, navigate, dispatch]);
 
 	return (
 		<div className='main'>

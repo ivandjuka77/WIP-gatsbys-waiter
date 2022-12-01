@@ -86,7 +86,7 @@ const PopupDrink = () => {
 					className='order-form'
 					onSubmit={addSum}
 				>
-					<label htmlFor='num'>Order amount </label>
+					<label htmlFor='num'>Order amount: </label>
 					<input
 						id={'num'}
 						type='number'

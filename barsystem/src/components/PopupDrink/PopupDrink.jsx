@@ -55,10 +55,7 @@ const PopupDrink = () => {
 				redirect: 'follow',
 			};
 
-			fetch(
-				`http://localhost:5000/api/inventory/update/${currentDrink._id}`,
-				requestOptions
-			)
+			fetch(`/api/inventory/update/${currentDrink._id}`, requestOptions)
 				.then((response) => response.text())
 				.then((result) => console.log(result))
 				.catch((error) => console.log('error', error));

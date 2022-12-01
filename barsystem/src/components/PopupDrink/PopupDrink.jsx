@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react';
-
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { returnDrinks } from '../../features/drinks/drinksSlice';
 import { drinksSold, soldSum } from '../../features/soldSum/soldSumSlice';
+import { returnDrinks } from '../../features/drinks/drinksSlice';
 import { display } from '../../features/drinkInfo/drinkInfoSlice';
 
 import './PopupDrink.scss';
 
 const PopupDrink = () => {
 	const dispatch = useDispatch();
+
+	dispatch(returnDrinks());
 
 	// State for drink order amount
 	const [amountForm, setAmountForm] = useState(0);
